@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    max-width: 100%;
+}
+.menuAdmin{
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    background-color: #C0C0C0;
+}
+
+.menu-list{
+    text-align: center;
+    padding-left: 10px;
+    border-bottom: #000 solid 1px;
+    line-height: 45px;
+    height: 45px;
+    color: black;
+    text-decoration: none;
+}
+.menu-list a{
+    text-decoration: none;
+    color: black;
+}
+.main-content{
+    display: contents;
+}

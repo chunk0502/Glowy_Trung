@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    max-width: 100%;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* begin header */
+.modal-input{
+    display: block;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size:16px ;
+    text-align: center;
+    line-height: 60px;
+    padding:0 0 0 20% ;
+    animation:  modalInputFadeIn ease 0.5s;
+}
+.modal-search{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+.modal-input .btn-search-line{
+    display: inline-block;
+    width: 10%;
+    align-items: center;
+    cursor: pointer;
+}
+.modal-input .btn-close-search{
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    float: right;
+    cursor: pointer;
+}
+.header{
+    background-color: #C6E2FF;
+    top: 0;
+    width: 100%;
+}
+
+.header .logo{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* button menu */
+.modal,.modal2{
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.main-menu{
+    display:inline-block;
+    width: 25%;
+    height: 92px;
+    font-size: 30px;
+    float: left;
+    line-height:92px;
+    text-align: center;
+    position: relative;
+}
+.btn-menu{
+    padding:11px 11px 5px 11px;
+    border-radius: 50%;
+    background-color: rgba(11,9,8,0.6);
+    color: #EEEEEE;
+    text-decoration: none;
+}
+.btn-menu:hover{
+    background-color: #000;
+    color:#825189 ;
+    cursor: pointer;
+}
+.close-menu{
+    color: #000;
+    text-decoration: none;
+}
+.sub-menu{
+    position:fixed;
+    display: block;
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 500;
+    height: 1000px;
+    width: 300px;
+    background-color: #cfebfc;
+    float: left;
+    top: 0;
+    animation: subMenuFadeIn ease 0.5s;
+}
+.modal.open,.modal2.open,.list-shop.open,.btnClose-shop.open{
+    display: block;
+}
+.btnOpen-shop.change{
+    display: none;
+}
+.sub-first-menu{
+    height: 150px;
+    border-bottom: #000 solid 1.5px;
+}
+.first-1-menu{
+    height: 65%;
+    display: block;
+}
+.arrow-left{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    line-height: 35px;
+}
+.close-menu{
+    background-color: #cfebfc;
+    cursor: pointer;
+}
+.first-2-menu{
+    line-height: 50px;
+    height: 35%; 
+    border-top: rgba(92,92,92,0.1) solid 4px;
+}
+.sign-in,.register{
+    text-align: center;
+    display: inline-block;
+    width: 49%;
+    border-left: rgba(92,92,92,0.1) solid 0.5px;
+    
+}
+.sign-in>a,.register>a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+.sub-menu .menu-list {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 45px;
+    height: 45px;
+    text-decoration: none;
+    color: #000;
+}
+.sub-menu li{
+    border-bottom: rgba(92,92,92,0.1) solid 1px;
+}   
+.btnOpen-shop{
+    float: right;
+    font-size: 22px;
+    margin-right: 15px;
+    line-height: 45px;
+    cursor: pointer;
+}
+.btnClose-shop{
+    display: none;
+    float: right;
+    font-size: 22px;
+    margin-right: 15px;
+    line-height: 45px;
+    cursor: pointer;
+}
+.list-shop{
+    display: none;
+    line-height: 38px;
+}
+.list-shop a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    list-style-type: none;
+    padding-left: 30px;
+}
+/* END button menu */
+
+
+.icon-header{
+    width: 25%;
+    font-size: 25px;
+    float: right;
+    display: inline-block;
+    line-height:87px;
+    text-align: center;
+    cursor: pointer;
+}
+.three-icon>li{
+    display: inline-block;
+    padding:0 15px;
+}
+.sub-user{
+    top: 70px;
+    line-height: 28px;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    display: none;
+}
+.sub-user a{
+    text-decoration: none;
+    color: #333f48;
+    font-size: 13px;
+    padding: 5px 24px;
+}
+.three-icon li:hover .sub-user{
+    display: block;
+}
+.sub-user li:hover{
+    background-color: #ccc;
+}
+/* end header */
+
+.row{
+    width: 100%;
+}
+.new-collection{
+    text-align: center;
+    font-size: 20px;
+    margin: 80px 0;
+    font-family: Arial;
+}
+.new-collection>i{
+    font-size: 35px;
+}
+.row{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.column{
+    float: left;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.product-info .product-name{
+    text-align: center;
+    padding: 8px 0;
+}
+.product-name>a{
+    color: #484848	;
+    text-decoration: none;
+}
+.product-info>span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Begin footer */
+.footer{
+    width: 100%;
+    background: #eaeaea;
+    display: inline-block;
+}
+.midFooter{
+    padding: 40px;
+    display: inline-block;
+}
+.footer p {
+    color: #000;
+    font-size: 13px;
+    line-height: 25px
+}
+.infoFooter{
+    width: 40%;
+    display: inline-block;
+    padding: 20px;
+    
+}
+.contactFooter{
+    width: 40%;
+    display: inline-block;
+    padding: 20px;
+}
+.contactFooter h4,.infoFooter h4{
+    line-height: 30px
+}
+.contactFooter i{
+    font-size: 30px;
+    color:  #4682B4;
+} 
+.copyRightFooter{   
+    background-color:#fff;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+/* End footer */
+ 
+
+@media screen and (max-width:600px) {
+    .logo{
+        width: 75%;
+    }
+    .icon-header{
+        display: none;
+    }
+    .row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .editP{
+        width: 100%;
+        height: auto;
+    }
+    .contactFooter,.infoFooter{
+        width: 80%;
+    }
+}
+@keyframes subMenuFadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes modalInputFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
